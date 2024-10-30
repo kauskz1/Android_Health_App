@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Login"
+	android:background="#10000000"
+	android:padding="10dp">
+	
+	<ImageView
+		android:id="@+id/imageView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/logo"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<TextView
+		android:id="@+id/accTvTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/app_name"
+		android:textColor="@color/green"
+		android:textSize="40sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/imageView" />
+	
+	<TextView
+		android:id="@+id/accTvWelcome"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="@string/accWelcome"
+		android:textSize="20sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/accTvTitle" />
+	<TextView
+		android:id="@+id/accTvSignup"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="@string/accLoginPrompt"
+		android:textSize="18sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/accTvWelcome" />
+	
+	<EditText
+		android:id="@+id/accEtEmail"
+		android:layout_width="379dp"
+		android:layout_height="48dp"
+		android:autofillHints="emailAddress"
+		android:ems="10"
+		android:hint="@string/accEmail"
+		android:textColorHint="#000"
+		android:inputType="textEmailAddress"
+		android:padding="10dp"
+		android:layout_marginTop="50dp"
+		android:drawableRight="@drawable/ic_email"
+		android:background="#fff"
+		
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/accTvSignup" />
+	
+	<EditText
+		android:id="@+id/accEtPassword"
+		android:layout_width="379dp"
+		android:layout_height="48dp"
+		android:autofillHints="password"
+		android:ems="10"
+		android:hint="@string/accPassword"
+		android:inputType="textPassword"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:background="#fff"
+		android:textColorHint="#000"
+		android:drawableRight="@drawable/password2"
+		app:layout_constraintTop_toBottomOf="@id/accEtEmail"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/accBtnLogin"
+		android:layout_width="180dp"
+		android:layout_height="60dp"
+		android:text="@string/accLogIn"
+		android:textSize="24sp"
+		android:textStyle="bold"
+		android:textColor="@color/white"
+		android:background="@drawable/button_green"
+		android:layout_marginTop="50dp"
+		app:layout_constraintTop_toBottomOf="@id/accEtPassword"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		/>
+	
+	<TextView
+		android:id="@+id/accTvCreate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:text="@string/accCreateAccountPrompt"
+		android:textSize="18sp"
+		app:layout_constraintTop_toBottomOf="@id/accBtnLogin"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		/>
+	
+	<TextView
+		android:id="@+id/accTvGuest"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:textSize="18sp"
+		android:text="@string/accGuest"
+		app:layout_constraintTop_toBottomOf="@id/accTvCreate"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		/>
+	
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "447323929002",
+    "project_id": "vitality-7d073",
+    "storage_bucket": "vitality-7d073.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447323929002:android:620df4a63d099d3d5d13d3",
+        "android_client_info": {
+          "package_name": "com.kaustubh.fisac"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhAeHfEDLkZUKsE5ZJLSmrgyDouGJABaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

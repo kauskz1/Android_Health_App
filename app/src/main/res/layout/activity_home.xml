@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#10000000"
+	tools:context=".HomeActivity">
+	
+	<TextView
+		android:id="@+id/homeTitle"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:background="@drawable/button_green"
+		android:gravity="center"
+		android:paddingTop="20dp"
+		android:text="@string/app_name"
+		android:textColor="@color/white"
+		android:textSize="40sp"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<TextView
+		android:id="@+id/homeTvBat"
+		android:layout_width="wrap_content"
+		android:layout_height="28dp"
+		android:background="@drawable/button_green"
+		android:paddingTop="2dp"
+		android:text="100%"
+		android:drawableRight="@drawable/ic_battery"
+		android:textColor="@color/white"
+		android:textSize="14sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	
+	<Button
+		android:id="@+id/homeBtnSignOut"
+		android:layout_width="wrap_content"
+		android:layout_height="48dp"
+		android:background="#00000000"
+		android:text="@string/sign_out"
+		android:textColor="@color/red"
+		android:textSize="16sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/homeTitle" />
+	
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/homeBtnUserProfile"
+		android:layout_width="130dp"
+		android:layout_height="130dp"
+		android:layout_marginTop="50dp"
+		android:background="@drawable/button_white_round"
+		android:text="@string/userProfile"
+		android:paddingTop="10dp"
+		android:drawableTop="@drawable/ic_person"
+		app:layout_constraintEnd_toStartOf="@+id/homeBtnAssessment"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/homeTitle" />
+	
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/homeBtnAssessment"
+		android:layout_width="130dp"
+		android:layout_height="130dp"
+		android:text="@string/assessment"
+		android:background="@drawable/button_white_round"
+		android:paddingTop="10dp"
+		android:drawableTop="@drawable/ic_calendar"
+		app:layout_constraintStart_toEndOf="@id/homeBtnUserProfile"
+		app:layout_constraintTop_toTopOf="@id/homeBtnUserProfile"
+		app:layout_constraintEnd_toEndOf="parent"/>
+	
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/homeBtnDietInfo"
+		android:layout_width="130dp"
+		android:layout_height="130dp"
+		android:layout_marginTop="30dp"
+		android:text="@string/dietInfo"
+		android:background="@drawable/button_white_round"
+		android:drawableTop="@drawable/ic_video"
+		android:paddingTop="10dp"
+		app:layout_constraintEnd_toStartOf="@id/homeBtnDietGuidelines"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/homeBtnUserProfile" />
+	
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/homeBtnDietGuidelines"
+		android:layout_width="130dp"
+		android:layout_height="130dp"
+		android:text="@string/dietGuidelines"
+		android:background="@drawable/button_white_round"
+		android:drawableTop="@drawable/ic_guidelines"
+		android:paddingTop="10dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/homeBtnDietInfo"
+		app:layout_constraintTop_toTopOf="@id/homeBtnDietInfo" />
+	
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/homeBtnPhysicalActivity"
+		android:layout_width="130dp"
+		android:layout_height="130dp"
+		android:text="@string/physicalActivity"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/button_white_round"
+		android:drawableTop="@drawable/ic_step"
+		android:paddingTop="10dp"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toStartOf="@id/homeBtnBmi"
+		app:layout_constraintTop_toBottomOf="@+id/homeBtnDietInfo" />
+	
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/homeBtnBmi"
+		android:layout_width="130dp"
+		android:layout_height="130dp"
+		android:text="@string/bmi_tracker"
+		android:background="@drawable/button_white_round"
+		android:drawableTop="@drawable/ic_calculator"
+		android:paddingTop="10dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/homeBtnPhysicalActivity"
+		app:layout_constraintTop_toTopOf="@id/homeBtnPhysicalActivity" />
+	
+	<androidx.appcompat.widget.AppCompatButton
+		android:id="@+id/homeBtnCall"
+		android:layout_width="250dp"
+		android:layout_height="80dp"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/button_white_round"
+		android:text="@string/homeContact"
+		android:paddingTop="10dp"
+		android:drawableStart="@drawable/ic_phone_big"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/homeBtnPhysicalActivity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
